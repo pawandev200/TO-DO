@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TodoList</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>To-Do List</h1>
+    </header>
+    <main class="container">
+        <section id="addTaskSection">
+            <h2>Add Task</h2>
+            <input type="text" id="taskInput" placeholder="Add new task...">
+            <button id="addTaskButton" onclick="addTask()">Add Task</button>
+        </section>
+        <section id="tasksAddedSection">
+            <h2>Tasks Added</h2>
+            <!-- <ul class="scroll">
+                <li id="todoList"></li>
+            </ul> -->
+            <div class="task-list-container">
+                <ul id="todoList"></ul>
+            </div>
+            <hr class="counter" />
+            <div class="counter-container">
+                <p>Total Tasks: <span id="taskCount">0</span></p>
+                <button id="deleteAllButton" onclick="deleteAllTasks()">Delete All</button>
+            </div>
+        </section>
+    </main>
+</body>
+      <script src="script.js"></script>
+</html>
+
+
+

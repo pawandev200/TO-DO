@@ -1,0 +1,178 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #374151;
+    /* color:#FFF; */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    color:#FFF;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    /* color: #e3e7de;;   */
+}
+
+/* Main container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff; 
+    border-radius: 10px;
+    padding: 20px;
+}
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Task input and button styles */
+#taskInput {
+    width: calc(100% - 85px); /* Adjust input width */
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+}
+
+#addTaskButton {
+    padding: 10px 20px;
+    margin: 0px auto; 
+    background-color: #33a437;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+#addTaskButton:hover {
+    background-color: #29a716;
+}
+
+/* Task list styles */
+
+.task-item-container {
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    padding: 10px; /* Add padding for spacing */
+    margin-bottom: 10px; /* Add margin between task items */
+    background-color: #ffffff; /* Set background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.task-list-container {
+    max-height:300px;
+    height: 300px; 
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+}
+#todoList {
+    list-style-type: none;
+    padding: 0;
+    /* border-block: 5px solid #cda2a2;; */
+   
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Light gray border */
+}
+
+/* Remove border from last item */
+.task-item:last-child {
+    border-bottom: none; 
+}
+
+.circle {
+    width: 20px; /* Adjust the width and height of the circle */
+    height: 20px;
+    border-radius: 50%; 
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex; /* Center the check mark horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.selected {
+    background-color: #00cc00; /* Change the background color when selected */
+    border-color: #00cc00; /* Change the border color when selected */
+    color: #fff; /* Change the color of the check mark when selected */
+}
+
+.task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.task-buttons button {
+    padding: 5px 10px;
+    background-color: rgb(92, 134, 62);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.task-buttons button:hover {
+    background-color: #d9281c;
+}
+
+.task-text {
+    flex: 1;
+}
+
+.crossed-out {
+    text-decoration: line-through;
+}
+
+/* Counter styles */
+.counter {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.counter-container p {
+    margin: 0;
+}
+
+#deleteAllButton {
+    padding: 8px 12px;
+    background-color: #d9281c; /* Red */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#deleteAllButton:hover {
+    background-color: #a31111; /* Darker red on hover */
+}
